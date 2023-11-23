@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate Dashboard</title>
+        <!-- ... existing head content ... -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <!-- Link to Plotly library for charting -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #chart-container {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exchange Rate Dashboard</h1>
+    <form id="dashboard-form">
+        <label for="currency1">Currency 1 (USD)</label>
+        <input type="text" id="currency1" value="USD" disabled>
+        <label for="currency2">Currency 2</label>
+        <input type="text" id="currency2" placeholder="Search for currency">
+        <label for="duration">Select Duration</label>
+        <select id="duration">
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="yearly">Yearly</option>
+        </select>
+        <button type="button" onclick="fetchAndPlotData()">Show Data</button>
+    </form>
+
+    <div id="chart-container">
+        <!-- Chart will be displayed here -->
+    </div>
+
+    <script>
+        // Function to fetch and plot data using Plotly
+        function fetchAndPlotData() {
+          
+        }
+    </script>
+</body>
+
+</html>
